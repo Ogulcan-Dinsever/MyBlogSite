@@ -13,5 +13,15 @@ namespace MyBlogSite.UI.Controllers
         {
             return View();
         }
+
+        public ActionResult SingUp()
+        {
+            return View();
+        }
+
+        public ActionResult SingIn()
+        {
+            return View();
+        }
     }
 }
