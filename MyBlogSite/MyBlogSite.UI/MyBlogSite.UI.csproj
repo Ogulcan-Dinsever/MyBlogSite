@@ -619,7 +619,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\SingUp.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
     <Content Include="TemplateCssSingup\css\style.css.map" />
     <Content Include="TemplateCssSingup\scss\common\extend.scss" />
     <Content Include="TemplateCssSingup\scss\common\fonts.scss" />
@@ -713,7 +713,9 @@
     <Content Include="TemplateCssSingup\fonts\poppins\roboto-condensed-v16-latin-regular.ttf" />
     <Content Include="TemplateCssSingup\fonts\poppins\roboto-condensed-v16-latin-regular.woff" />
     <Content Include="TemplateCssSingup\fonts\poppins\roboto-condensed-v16-latin-regular.woff2" />
-    <Content Include="Views\Home\SingIn.cshtml" />
+    <Content Include="Views\Home\SignIn.cshtml" />
+    <Content Include="Views\Home\Profile.cshtml" />
+    <Content Include="Views\Home\AddEntry.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

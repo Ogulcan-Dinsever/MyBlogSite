@@ -2077,11 +2077,11 @@
 			box-shadow: none;
 		}
 
-	.select-wrapper {
-		text-decoration: none;
-		display: block;
-		position: relative;
-	}
+.category {
+	text-decoration: none;
+	display: block;
+	position: relative;
+}
 
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;

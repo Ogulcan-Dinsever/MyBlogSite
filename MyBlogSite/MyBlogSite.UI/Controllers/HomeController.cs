@@ -14,14 +14,23 @@ namespace MyBlogSite.UI.Controllers
             return View();
         }
 
-        public ActionResult SingUp()
+        public ActionResult SignUp()
         {
             return View();
         }
 
-        public ActionResult SingIn()
+        public ActionResult SignIn()
         {
             return View();
         }
+        public ActionResult Profile()
+        {
+            return View();
+        }
+        public ActionResult AddEntry()
+        {
+            return View();
+        }
+
     }
 }
