@@ -733,6 +733,20 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlogSite.BusinessLayer\MyBlogSite.BusinessLayer.csproj">
+      <Project>{e29bfae2-d4ec-4fde-bea9-d2faf69811a7}</Project>
+      <Name>MyBlogSite.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogSite.DataAccessLayer\MyBlogSite.DataAccessLayer.csproj">
+      <Project>{bf308f1a-eb0a-422e-9feb-d8e99d568d72}</Project>
+      <Name>MyBlogSite.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogSite.Entities\MyBlogSite.Entities.csproj">
+      <Project>{f315d4b0-3527-4be9-ace2-0d31cf3c1c4b}</Project>
+      <Name>MyBlogSite.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

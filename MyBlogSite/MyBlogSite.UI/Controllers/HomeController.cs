@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyBlogSite.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -19,14 +20,22 @@ namespace MyBlogSite.UI.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult SignUp(User user)
+        {
+            return View();
+        }
+
         public ActionResult SignIn()
         {
             return View();
         }
+
         public ActionResult Profile()
         {
             return View();
         }
+
         public ActionResult AddEntry()
         {
             return View();
