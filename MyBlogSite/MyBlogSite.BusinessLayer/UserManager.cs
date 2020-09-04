@@ -16,5 +16,15 @@ namespace MyBlogSite.BusinessLayer
         {
             return userRepository.GetById(id);
         }
+
+        public User GetUserByMail(string mail)
+        {
+            return userRepository.GetByMail(x => x.eMail == mail);
+        }
+
+        public void AddUser(User user)
+        {
+            userRepository.Add(user);
+        }
     }
 }

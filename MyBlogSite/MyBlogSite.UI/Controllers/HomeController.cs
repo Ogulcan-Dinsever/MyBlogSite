@@ -1,4 +1,5 @@
-﻿using MyBlogSite.Entities;
+﻿using MyBlogSite.BusinessLayer;
+using MyBlogSite.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace MyBlogSite.UI.Controllers
 {
     public class HomeController : Controller
     {
+        UserManager userManager = new UserManager();
         // GET: Home
         public ActionResult Index()
         {
@@ -21,13 +23,34 @@ namespace MyBlogSite.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult SignUp(User user)
+        public ActionResult SignUp(User user, string re_pass)
         {
+            if (user != null)
+            {
+                if (user.Password == re_pass)
+                {
+                    userManager.AddUser(user);
+                    return RedirectToAction("SignIn");
+                }
+            }
             return View();
         }
 
         public ActionResult SignIn()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SignIn(User loginUser)
+        {
+            User user = userManager.GetUserByMail(loginUser.eMail);
+
+            if (user != null)
+            {
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
 

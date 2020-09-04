@@ -22,6 +22,11 @@ namespace MyBlogSite.DataAccessLayer
             return _objectSet.Find(id);
         }
 
+        public T GetByMail(Expression<Func<T, bool>> predicate)
+        {
+            return _objectSet.FirstOrDefault(predicate);
+        }
+
         public IEnumerable<T> List()
         {
             return _objectSet.AsEnumerable();

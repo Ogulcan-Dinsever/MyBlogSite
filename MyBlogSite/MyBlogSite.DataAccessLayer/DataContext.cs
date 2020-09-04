@@ -9,7 +9,7 @@ namespace MyBlogSite.DataAccessLayer
     public partial class DataContext : DbContext
     {
         public DataContext()
-            : base("name=DataContext")
+            : base("DataContext")
         {
         }
 
