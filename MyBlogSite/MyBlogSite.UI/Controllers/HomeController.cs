@@ -46,12 +46,19 @@ namespace MyBlogSite.UI.Controllers
         {
             User user = userManager.GetUserByMail(loginUser.eMail);
 
-            if (user != null)
+            if (user != null && user.Password == loginUser.Password)
             {
+                Session["Login"] = user;
                 return RedirectToAction("Index");
             }
 
             return View();
+        }
+
+        public ActionResult SignOut()
+        {
+            Session.Clear();
+            return RedirectToAction("Index");
         }
 
         public ActionResult Profile()
